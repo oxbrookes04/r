@@ -1,5 +1,8 @@
-install.packages("tidyverse")
-install.packages("rmarkdown")
-install.packages("httr")
-install.packages("shinydashboard")
-install.packages("leaflet")
+install.packages("BiocManager")
+BiocManager::install(version = "3.18")
+BiocManager::install(c(
+  "memes",
+  "BSgenome.Hsapiens.UCSC.hg19",
+  "GenomicRanges",
+  "Biostrings"
+))
